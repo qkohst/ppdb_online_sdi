@@ -56,24 +56,24 @@
                                         <li><a href="/">Home</a></li>
                                         <li><a href="#">Pendaftaran <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="#">Alur Pendaftaran</a></li>
+                                                <li><a href="/pesdik/alur_pendaftaran">Alur Pendaftaran</a></li>
                                                 <li><a href="/pesdik/form_daftar">Daftar</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="/pesdik/lihat_pendaftar">Lihat Pendaftar</a></li>
-                                        <li><a href="#">Pengumuman</a></li>
+                                        <!-- <li><a href="#">Pengumuman</a></li> -->
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        <!-- <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="log_chat_area d-flex align-items-center">
                                 <a href="#test-form" class="login popup-with-form">
                                     <i class="flaticon-user"></i>
-                                    <span>log in</span>
+                                    <span>login Admin</span>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
@@ -142,11 +142,7 @@
                                 <li> - Pramuka</li>
                                 <li> - Komputer</li>
                                 <li> - Praktik Ubudiyah</li>
-                                <li> - 4 Bahasa</li>
-                                    <ol>* Indonesia</ol>
-                                    <ol>* Jawa</ol>
-                                    <ol>* Inggris</ol>
-                                    <ol>* Arab</ol>
+                                <li> - 4 Bahasa <i>(Indonesia, Jawa, Inggris, Arab)</i> </li>
                                 <li> - Hafalan Juz Amma</li>
                             </ul>
                         </div>

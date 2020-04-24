@@ -13,6 +13,11 @@ class PesdikController extends Controller
         return view('pesdik.lihat_pendaftar', compact('data_pesdik'));
     }
 
+    public function alur_pendaftaran()
+    {
+        return view('pesdik.alur_pendaftaran');
+    }
+
     public function form_daftar()
     {
         return view('pesdik.form_daftar');
@@ -101,7 +106,7 @@ class PesdikController extends Controller
       
         $pesdik->save();
 
-        return redirect('/pesdik/lihat_pendaftar')->with("sukses", "Data Anda Telah Didaftarkan");
+        return view('/pesdik/detail', compact('pesdik'));
 
     }
 
@@ -109,5 +114,11 @@ class PesdikController extends Controller
     {
         $pesdik = \App\Pesdik::find($id_pesdik);
         return view('/pesdik/detail', compact('pesdik'));
+    }
+
+    public function cetak_biodata($id_pesdik)
+    {
+        $pesdik = \App\Pesdik::find($id_pesdik);
+        return view('/pesdik/cetak_biodata', compact('pesdik'));
     }
 }

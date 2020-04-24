@@ -10,10 +10,19 @@
     <section class="content card" style="padding: 10px 10px 20px 20px  ">
     <section class="content">
         {{csrf_field()}}
+        <div class="section-top-border">
+          <h3 class="mb-30"><i class="fas fa-info"></i> Perhatian</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <blockquote class="generic-blockquote">
+                  <h5>Silahkan cetak dan simpan buti pendaftaran, dan tunjukan kepada petugas saat pelaksanaan daftar ulang di sekolah !</h5>
+                </blockquote>
+              </div>
+            </div>
+			  </div>
         <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
-
             <!-- Profile Image -->
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
@@ -38,8 +47,7 @@
                     TK/RA Asal <a class="float-right">{{$pesdik->asal_tkra}}</a>
                   </li>
                 </ul>
-
-                <a href="#" class="btn btn-primary btn-block"><i class="fas fa-print"></i> Cetak Biodata Peserta Didik</a>
+                <a href="/pesdik/{{$pesdik->id}}/cetak_biodata" target="_blank" class="btn btn-primary btn-block"><i class="fas fa-print"></i> Cetak Bukti Pendaftaran</a>
               </div>
               <!-- /.card-body -->
             </div>
