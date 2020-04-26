@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Pesdik;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Exports\PesdikExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PesdikController extends Controller
 {
@@ -120,5 +122,10 @@ class PesdikController extends Controller
     {
         $pesdik = \App\Pesdik::find($id_pesdik);
         return view('/pesdik/cetak_biodata', compact('pesdik'));
+    }
+
+    public function export() 
+    {
+        return Excel::download(new PesdikExport, 'PPDB_Online_SDI.xlsx');
     }
 }

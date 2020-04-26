@@ -20,3 +20,4 @@ Route::get('/pesdik/form_daftar','PesdikController@form_daftar');
 Route::post('/pesdik/daftar','PesdikController@daftar');
 Route::get('/pesdik/{id}/detail','PesdikController@detail');
 Route::get('/pesdik/{id}/cetak_biodata','PesdikController@cetak_biodata');
+Route::get('/pesdik/export', 'PesdikController@export');

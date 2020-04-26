@@ -29,6 +29,9 @@
             </button>
         </div>
         @endif
+        <div> 
+            <a href="/pesdik/export" class="btn btn-success btn-sm my-1 mr-sm-1"><i class="nav-icon fas fa-file-excel"></i> Download Excel</a><br>
+        </div>
         <div class="row table-responsive">
                     <table class="table table-head-fixed" id='calon_pesdik'>
                         <thead>
